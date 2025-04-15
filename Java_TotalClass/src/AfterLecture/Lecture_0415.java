@@ -1,12 +1,13 @@
 // Day2 2025.04.15
 // 오후 보충자료: Java 1장,2장
-// 1. 환경설정 2. 변수 3. 연산자 4. 조건식 5. 입출력
+// 1. 환경설정 2. 변수 3. 연산자 4. 조건식 5. 입출력 6. 참조타입
 
 package AfterLecture;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class Lecture_0415 {
     public static void main(String[] args) throws IOException {
@@ -73,7 +74,53 @@ public class Lecture_0415 {
         }
         System.out.println("두 정수의 합: " + sum);*/
 
+        /* 랜덤 숫자 맞추기
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        int randNum = (int)(Math.random()*99);
+
+        while(true) {
+            System.out.print("랜덤 숫자를 입력하세요 : ");
+            int input = Integer.parseInt(br.readLine());
+
+            if(randNum == input) {
+                System.out.println("정답입니다! 랜덤 숫자는 "+randNum);
+                break;
+            }
+            if(randNum > input) {
+                System.out.println("Up");
+            }
+            if(randNum < input) {
+                System.out.println("Down");
+            }
+        }*/
+
+        /* 배열의 합, 평균 출력
+        int[] nums = new int[]{ 100,39,60,30,42,40,25,70,90,55};
+
+        float sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+        }
+        float avg = sum / nums.length;
+
+        System.out.println("배열의 합산 값 : " + sum);
+        System.out.println("배열의 평균 값 : " + avg);*/
+
+        /* 랜덤 배열, 합, 평균 출력
+        int[] arr = new int[10];
+        float sum = 0;
+
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = (int)(Math.random()*100);
+            sum += arr[i];
+        }
+
+        float avg = sum/arr.length;
+
+        System.out.println("랜덤 배열: " + Arrays.toString(arr));
+        System.out.println("랜덤 배열의 합산: " + sum);
+        System.out.println("랜덤 배열의 평균: " + avg);*/
         
     }
 }
