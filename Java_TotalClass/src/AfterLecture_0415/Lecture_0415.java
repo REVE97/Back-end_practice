@@ -2,12 +2,9 @@
 // 오후 보충자료: Java 1장,2장
 // 1. 환경설정 2. 변수 3. 연산자 4. 조건식 5. 입출력 6. 참조타입
 
-package AfterLecture;
+package AfterLecture_0415;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class Lecture_0415 {
     public static void main(String[] args) throws IOException {
@@ -121,6 +118,5 @@ public class Lecture_0415 {
         System.out.println("랜덤 배열: " + Arrays.toString(arr));
         System.out.println("랜덤 배열의 합산: " + sum);
         System.out.println("랜덤 배열의 평균: " + avg);*/
-        
     }
 }
