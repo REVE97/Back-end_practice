@@ -1,3 +1,5 @@
+// 서블릿의 컨텍스트(요청 주소) 설정
+
 package org.example.springtest_01.config;
 
 import org.springframework.context.annotation.ComponentScan;

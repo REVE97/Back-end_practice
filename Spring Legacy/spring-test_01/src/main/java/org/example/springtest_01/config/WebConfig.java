@@ -1,3 +1,6 @@
+// 글로벌 웹에 관련된 설정, CORS, 필터 등을 설정
+// Root,Servlet 설정 파일들을 불러와서 최종적으로 적용
+
 package org.example.springtest_01.config;
 
 import org.springframework.context.annotation.Configuration;
