@@ -2,6 +2,7 @@ package org.example.springtest_01.controller.member;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.springtest_01.domain.member.MemberEntity;
+import org.example.springtest_01.dto.member.MemberDto;
 import org.example.springtest_01.service.member.MemberServiceV1;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,7 +22,7 @@ public class MemberListControllerV1 {
 
     @GetMapping("/member/list")
     public String memberList(Model model){
-        List<MemberEntity> memberList = memberService.getMemberList();
+        List<MemberDto> memberList = memberService.getMemberList();
         model.addAttribute("memberList", memberList);
         return "member/list";
     }

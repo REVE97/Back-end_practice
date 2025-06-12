@@ -12,13 +12,14 @@ import javax.servlet.Filter;
 
 @Configuration
 public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
+    // RootConfig 의 기본 설정 불러오기
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{
                 RootConfig.class
         };
     }
-
+    // ServletConfig 의 서블릿 설정 불러오기
     @Override
     protected Class<?>[] getServletConfigClasses() {
         return new Class[]{
