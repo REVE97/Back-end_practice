@@ -1,7 +1,6 @@
-package org.example.springtest_01.controller.member;
+package org.example.springtest_01.controller.member.v1;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.springtest_01.domain.member.MemberEntity;
 import org.example.springtest_01.dto.member.MemberDto;
 import org.example.springtest_01.service.member.MemberServiceV1;
 import org.springframework.stereotype.Controller;
